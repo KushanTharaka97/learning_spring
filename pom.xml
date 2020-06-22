@@ -34,8 +34,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId></groupId>
-			<artifactId></artifactId>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
 		</dependency>
 
 		<dependency>
