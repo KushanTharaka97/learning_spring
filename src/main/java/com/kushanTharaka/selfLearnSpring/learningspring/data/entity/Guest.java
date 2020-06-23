@@ -9,7 +9,7 @@ public class Guest {
     @Id
     @Column(name = "GUEST_ID")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long reservationId;
+    private Long guestId;
 
     @Column(name = "FIRST_NAME")
     private String firstName;
@@ -35,12 +35,12 @@ public class Guest {
     //generating getters setters
 
 
-    public Long getReservationId() {
-        return reservationId;
+    public Long getGuestId() {
+        return guestId;
     }
 
-    public void setReservationId(Long reservationId) {
-        this.reservationId = reservationId;
+    public void setGuestId(Long guestId) {
+        this.guestId = guestId;
     }
 
     public String getFirstName() {
