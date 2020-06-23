@@ -61,3 +61,15 @@ public class LearningSpringApplication {
 
 
 }
+
+/*
+* Remote Database: application properties
+*
+* spring.jpa.database = postgresql
+spring.datasource.platform = postgres
+spring.datasource.url = jdbc:postgresql://localhost:5432/dev
+spring.datasource.username = postgres
+spring.datasource.password = postgres
+
+*
+* */
