@@ -1,8 +1,10 @@
 package com.kushanTharaka.selfLearnSpring.learningspring;
 
 import com.kushanTharaka.selfLearnSpring.learningspring.data.entity.Guest;
+import com.kushanTharaka.selfLearnSpring.learningspring.data.entity.Reservation;
 import com.kushanTharaka.selfLearnSpring.learningspring.data.entity.Room;
 import com.kushanTharaka.selfLearnSpring.learningspring.data.repository.GuestRepository;
+import com.kushanTharaka.selfLearnSpring.learningspring.data.repository.ReservationRepository;
 import com.kushanTharaka.selfLearnSpring.learningspring.data.repository.RoomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -40,11 +42,22 @@ public class LearningSpringApplication {
 		private GuestRepository guestRepository;
 
 		@GetMapping
-		public Iterable<Guest> getRooms(){
+		public Iterable<Guest> getGuest(){
 			return this.guestRepository.findAll();
 		}
 	}
 
+	@RestController
+	@RequestMapping("/reservations")
+	public class ReservationController{
+		@Autowired
+		public ReservationRepository reservationRepository;
+
+		@GetMapping
+		public Iterable<Reservation> getReservation(){
+			return this.reservationRepository.findAll();
+		}
+	}
 
 
 }
