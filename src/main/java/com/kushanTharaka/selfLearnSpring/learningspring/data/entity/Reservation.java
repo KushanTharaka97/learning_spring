@@ -19,4 +19,36 @@ public class Reservation {
 
     @Column(name = "RES_DATE")
     private Date resDate;
+
+    public Long getReservationId() {
+        return reservationId;
+    }
+
+    public void setReservationId(Long reservationId) {
+        this.reservationId = reservationId;
+    }
+
+    public Long getRoomId() {
+        return roomId;
+    }
+
+    public void setRoomId(Long roomId) {
+        this.roomId = roomId;
+    }
+
+    public Long getGuestId() {
+        return guestId;
+    }
+
+    public void setGuestId(Long guestId) {
+        this.guestId = guestId;
+    }
+
+    public Date getResDate() {
+        return resDate;
+    }
+
+    public void setResDate(Date resDate) {
+        this.resDate = resDate;
+    }
 }
